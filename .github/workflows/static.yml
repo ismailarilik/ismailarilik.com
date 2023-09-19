@@ -12,4 +12,4 @@ jobs:
       - name: Install html5validator using pip
         run: pip install html5validator
       - name: Validate HTML using the command line tool of html5validator
-        run: html5validator
+        run: html5validator --root ${{ github.workspace }}
